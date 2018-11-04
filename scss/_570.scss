@@ -1,0 +1,378 @@
+html {
+  font-size: 12px;
+}
+
+
+main {
+
+  aside {
+    width: 40%;
+    padding-top: 3em;
+    padding-left: 3%;
+    padding-bottom: 4rem;
+    min-width: unset;
+
+    position: absolute;
+    right: 100%;
+    @include anim();
+    z-index: 9;
+    width: 70%;
+
+    &.active {
+      right: 30%;
+    }
+
+    .logo {
+      width: 12rem;
+      height: 4.11rem;
+    }
+
+    .line {
+      width: 45px;
+      height: 2px;
+      margin: 2.5em 0 5em;
+    }
+
+    .main-menu {
+
+      li {
+        margin-bottom: 2rem;
+
+        &:after {
+          width: 60%;
+          height: 9px;
+          background: url(../img/aside__main-menu__active.png) no-repeat left center / auto 100%;
+        }
+
+        a {
+          font-size: 1.1rem;
+          margin-right: 1em;
+        }
+      }
+    }
+
+    .slogan {
+      font-size: 0.875rem;
+      margin-top: 1em;
+      line-height: 1.4em;
+    }
+
+    .aside__bottom {
+      margin-top: 8rem;
+
+      .tell-friends {
+        font-size: 0.875rem;
+        padding-left: 1.2rem;
+        line-height: 1.4em;
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        margin-top: 1.2em;
+      }
+    }
+  }
+
+  .content {
+    width: 94%;
+
+    .top {
+      height: 4.375rem;
+      padding: 0 0;
+
+      .main-menu__toggle {
+        width: 3rem;
+        height: 2rem;
+
+        width: 10%;
+
+        span {
+          height: 4px;
+
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            top: calc(1rem - 2px);
+          }
+        }
+      }
+
+      .courses {
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+
+        p {
+          margin-right: 0;
+          font-size: 0.875rem;
+          display: inline-block;
+          margin: 0.3em 0;
+          width: 100%;
+          text-align: center;
+
+          b {
+            margin-right: 1em;
+          }
+        }
+      }
+
+      .languages {
+
+        li {
+          margin-right: 1.4rem;
+
+          &:nth-of-type(1) {
+            margin-right: 0;
+          }
+          
+          a {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+
+    .info {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .content__title {
+        font-size: 1.3rem;
+
+        &:after {
+          width: 100%;
+          max-width: 372px;
+          height: 4px;
+        }
+      }
+
+      .pawnshop-request {
+          margin-top: 4rem;
+
+        .credit-info {
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .card {
+            border-radius: 18px;
+            box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.45);
+            width: 240px;
+            height: auto;
+          }
+
+          .advantages {
+            width: 300px;
+            margin-top: 2rem;
+
+            li {
+              font-size: 1rem;
+              line-height: 1em;
+              
+              &:nth-child(n+2) {
+                margin-top: 1.6em;
+              }
+
+              &:before {
+                width: 9px;
+                height: 9px;
+              }
+            }
+          }
+        }
+
+        .credit-steps {
+          width: 100%;
+          margin-top: 4rem;
+          align-items: flex-start;
+          flex-wrap: wrap;
+
+          li {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: row;
+
+            width: 100%;
+            margin-bottom: 1.5rem;
+            justify-content: space-around;
+            align-items: center;
+
+            &:nth-last-of-type(1) {
+              width: 100%;
+            }
+
+            .icon {
+              width: 60px;
+              height: 60px;
+              font-size: 30px;
+              padding-top: 0.2em;
+            }
+
+            p {
+              font-size: 1rem;
+              line-height: 1.4em;
+              width: 73%;
+              margin-top: 1em;
+              text-align: center;
+              padding: 0 1em;
+
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .button-action {
+        margin-top: 4rem;
+        line-height: 3.75rem;
+        padding: 0 4.3rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+      }
+
+      .infoblock {
+        margin-right: 0;
+        margin-top: 3rem;
+        padding: 3rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h4 {
+          font-size: 1.5rem;
+
+          &:after {
+            height: 2px;
+            margin-right: 20%;
+            width: 80%;
+          }
+        }
+
+        ul {
+          margin-top: 3rem;
+
+          li {
+            font-size: 0.75rem;
+
+            &:nth-child(n+2) {
+              margin-top: 1.5rem;
+            }
+
+            b {
+              margin-right: 0;
+              width: 100%;
+              margin-bottom: 0.6em;
+            }
+          }
+        }
+
+        .pay-buttons {
+          justify-content: center;
+          
+          .download {
+            width: 100%;
+            margin-top: 2rem;
+
+            span {
+              width: 100%;
+              text-align: center;
+            }
+          }
+        }
+        
+        .infoblock__policy {
+          margin-top: 3rem;
+
+          input {
+            margin-right: 1.25rem;
+            width: 15px;
+            height: 15px;
+          }
+
+          span {
+            font-size: 0.75rem;
+            line-height: 1.3em;
+          }
+        }
+
+        .button-action {
+          margin-top: 2rem;
+          padding: 0 2.1rem;
+          font-size: 0.75rem;
+          float: none;
+        }
+      }
+
+      .form__policy {
+        width: 100%;
+
+        input {
+          margin-right: 1.25rem;
+          width: 15px;
+          height: 15px;
+        }
+
+        span {
+          font-size: 0.75rem;
+          line-height: 1.3em;
+        }
+      }
+
+      .form {
+        margin-top: 4rem;
+        padding: 2rem 2rem;
+
+        fieldset {
+          margin-bottom: 3rem;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          input {
+            width: 100%;
+            max-width: 400px;
+            height: 2rem;
+            font-size: 0.875rem;
+            margin-bottom: 3rem;
+            float: none;
+
+            &:nth-of-type(2n) {
+              margin-left: 0;
+              float: none;
+            }
+          }
+        }
+
+        .form__row {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .form__buttons {
+          margin-top: 2rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          .send-request,
+          .register,
+          .login {
+            font-size: 0.75rem;
+            padding: 0 3em;
+            line-height: 2.7rem;
+            margin-top: 0;
+          }
+
+          .register,
+          .login {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+html {
+  font-size: 12px;
+}
+
+
+main {
+
+  aside {
+    width: 40%;
+    padding-top: 3em;
+    padding-left: 3%;
+    padding-bottom: 4rem;
+    min-width: unset;
+
+    position: absolute;
+    right: 100%;
+    @include anim();
+    z-index: 9;
+    width: 50%;
+
+    &.active {
+      right: 50%;
+    }
+
+    .logo {
+      width: 14rem;
+      height: 4.8rem;
+    }
+
+    .line {
+      width: 45px;
+      height: 2px;
+      margin: 2.5em 0 5em;
+    }
+
+    .main-menu {
+
+      li {
+        margin-bottom: 2rem;
+
+        &:after {
+          width: 60%;
+          height: 9px;
+          background: url(../img/aside__main-menu__active.png) no-repeat left center / auto 100%;
+        }
+
+        a {
+          font-size: 1.25rem;
+          margin-right: 1em;
+        }
+      }
+    }
+
+    .slogan {
+      font-size: 0.875rem;
+      margin-top: 1em;
+    }
+
+    .aside__bottom {
+      margin-top: 8rem;
+
+      .tell-friends {
+        font-size: 0.875rem;
+        padding-left: 1.2rem;
+        line-height: 1.4em;
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        margin-top: 1.2em;
+      }
+    }
+  }
+
+  .content {
+    width: 95%;
+
+    .top {
+      height: 4.375rem;
+
+      .main-menu__toggle {
+        width: 3rem;
+        height: 2rem;
+
+        span {
+          height: 4px;
+
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            top: calc(1rem - 2px);
+          }
+        }
+      }
+
+      .courses {
+
+        p {
+          margin-right: 2em;
+          font-size: 0.875rem;
+
+          b {
+            margin-right: 1em;
+          }
+        }
+      }
+
+      .languages {
+
+        li {
+          margin-right: 1.4rem;
+          
+          a {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+
+    .info {
+      margin-top: 2rem;
+
+      .content__title {
+        font-size: 1.3rem;
+
+        &:after {
+          width: 100%;
+          max-width: 372px;
+          height: 4px;
+        }
+      }
+
+      .pawnshop-request {
+          margin-top: 4rem;
+
+        .credit-info {
+          max-width: none;
+
+          .card {
+            border-radius: 18px;
+            box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.45);
+            width: 38%;
+            height: auto;
+          }
+
+          .advantages {
+            width: 58%;
+
+            li {
+              font-size: 1rem;
+              line-height: 1em;
+              
+              &:nth-child(n+2) {
+                margin-top: 1.6em;
+              }
+
+              &:before {
+                width: 9px;
+                height: 9px;
+              }
+            }
+          }
+        }
+
+        .credit-steps {
+          width: 98%;
+          max-width: none;
+          margin-top: 4rem;
+          align-items: flex-start;
+
+          li {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: row;
+
+            &:nth-last-of-type(1) {
+              width: 36%;
+            }
+
+            .icon {
+              width: 60px;
+              height: 60px;
+              font-size: 30px;
+              padding-top: 0.2em;
+            }
+
+            p {
+              font-size: 1rem;
+              line-height: 1.4em;
+              width: 100%;
+              margin-top: 1em;
+              text-align: center;
+              padding: 0 1em;
+            }
+          }
+        }
+      }
+
+      .button-action {
+        margin-top: 4rem;
+        line-height: 3.75rem;
+        padding: 0 4.3rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+      }
+
+      .form {
+        margin-top: 6rem;
+        max-width: 100%;
+        padding: 2rem;
+
+        fieldset {
+          margin-bottom: 3rem;
+
+          input {
+            width: 32.5%;
+            min-width: 220px;
+            height: 2rem;
+            font-size: 0.875rem;
+            margin-bottom: 3rem;
+
+            &:nth-of-type(2n) {
+              margin-left: 20px;
+            }
+          }
+        }
+
+        .form__buttons {
+          width: 32.5%;
+          min-width: 220px;
+
+          .send-request,
+          .register,
+          .login {
+            font-size: 0.75rem;
+            padding: 0 3em;
+            line-height: 2.7rem;
+            margin-top: 0;
+          }
+
+          .login {
+            padding: 0 1.5em;
+            margin-top: 1rem;;
+          }
+        }
+      }
+    }
+  }
+}

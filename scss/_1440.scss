@@ -1,0 +1,245 @@
+html {
+  font-size: 14px;
+}
+
+
+main {
+
+  aside {
+    width: 24.5%;
+    min-width: 320px;
+    padding-top: 3em;
+    padding-left: 3%;
+    // padding-bottom: 4rem;
+    padding-bottom: 3%;
+
+    .logo {
+      width: 14rem;
+      height: 4.8rem;
+    }
+
+    .line {
+      width: 45px;
+      height: 2px;
+      margin: 2.5em 0 5em;
+    }
+
+    .main-menu {
+
+      li {
+        margin-bottom: 2rem;
+
+        &:after {
+          width: 60%;
+          height: 9px;
+          background: url(../img/aside__main-menu__active.png) no-repeat left center / auto 100%;
+        }
+
+        a {
+          font-size: 1.25rem;
+          margin-right: 1em;
+        }
+      }
+    }
+
+    .slogan {
+      font-size: 0.875rem;
+      margin-top: 1em;
+    }
+
+    .aside__bottom {
+      margin-top: 5rem;
+
+      .tell-friends {
+        font-size: 0.875rem;
+        padding-left: 1.2rem;
+        line-height: 1.4em;
+      }
+
+      .copyright {
+        font-size: 0.75rem;
+        margin-top: 1.2em;
+      }
+    }
+  }
+
+  .content {
+    width: 65%;
+
+    .top {
+      height: 4.375rem;
+
+      .courses {
+
+        p {
+          margin-right: 2em;
+          font-size: 0.875rem;
+
+          b {
+            margin-right: 1em;
+          }
+        }
+      }
+
+      .languages {
+
+        li {
+          margin-right: 1.4rem;
+          
+          a {
+            font-size: 0.875rem;
+          }
+        }
+      }
+    }
+
+    .info {
+      margin-top: 2rem;
+
+      .content__title {
+        font-size: 1.3rem;
+
+        &:after {
+          width: 100%;
+          max-width: 372px;
+          height: 4px;
+        }
+      }
+
+      .pawnshop-request {
+          margin-top: 8rem;
+
+        .credit-info {
+          max-width: none;
+
+          .card {
+            border-radius: 18px;
+            box-shadow: 2.5px 4.3px 35px rgba(0, 0, 0, 0.45);
+            width: 48%;
+            height: auto;
+          }
+
+          .advantages {
+            width: 48%;
+
+            li {
+              font-size: 1rem;
+              line-height: 1em;
+              
+              &:nth-child(n+2) {
+                margin-top: 1.6em;
+              }
+
+              &:before {
+                width: 9px;
+                height: 9px;
+              }
+            }
+          }
+        }
+
+        .credit-steps {
+          width: 98%;
+          max-width: none;
+          margin-top: 5rem;
+          align-items: flex-start;
+
+          li {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            flex-direction: row;
+
+            &:nth-last-of-type(1) {
+              width: 36%;
+            }
+
+            .icon {
+              width: 60px;
+              height: 60px;
+              font-size: 30px;
+              padding-top: 0.2em;
+            }
+
+            p {
+              font-size: 1rem;
+              line-height: 1.4em;
+              width: 100%;
+              margin-top: 1em;
+              text-align: center;
+              padding: 0 1em;
+            }
+          }
+        }
+      }
+
+      .button-action {
+        margin-top: 5rem;
+        line-height: 3.75rem;
+        padding: 0 4.3rem;
+        font-size: 1rem;
+        border-radius: 2rem;
+      }
+
+      .infoblock {
+
+        ul {
+
+          li {
+
+            b {
+              width: 30%;
+            }
+          }
+        }
+      }
+
+      .form {
+        margin-top: 6.25rem;
+        max-width: 100%;
+        padding: 2rem 3rem;
+
+        fieldset {
+          margin-bottom: 3rem;
+          padding-right: 0;
+
+          input {
+            width: 32.5%;
+            min-width: 220px;
+            height: 2rem;
+            font-size: 0.875rem;
+            margin-bottom: 3rem;
+
+            &:nth-of-type(2n) {
+              margin-left: 20%;
+            }
+          }
+        }
+
+        .form__buttons {
+          width: 37.5%;
+          min-width: 220px;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          .send-request,
+          .register,
+          .login {
+            font-size: 0.75rem;
+            padding: 0 3em;
+            line-height: 2.7rem;
+            margin-top: 0;
+          }
+
+          .login {
+            margin-top: 1rem;
+            padding: 0 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
